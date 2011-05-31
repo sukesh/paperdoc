@@ -1,8 +1,8 @@
 class InstituteMember < ActiveRecord::Base
   # since each institute_member belong to an institute
-  belongs_to :institute
+  belongs_to :institutes
   # since each institute_member belong to the Users schema
-  belongs_to :user
+  belongs_to :users
 
 end
 

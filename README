@@ -13,7 +13,21 @@ Date & Activities Done:
       Update message:text user_id:integer activity_id:integer type:string time:string
       ActivityParticipant activity_id:integer user_id:integer type:string time:string
       InstituteMember institute_id:integer user_id:integer official_identification:string time:string
-  --
+  --Git branched "data-model-relations"    
+  --Data Model Relations added: written to
+      models/institue.rb             >> has_many :institute_members, :dependent => :destroy ; belongs_to :users
+                                     >> has_many :activities
+      models/institute_member.rb     >> belongs_to :institute ; belongs_to :user {note: singular names}
+      models/user.rb                 >> has_many :institute_members, :dependent => :destroy ; has_one :institute
+                                        has_many :uploadedfiles; has_many :activities ; has_many :updates
+                                        has_many :activity_participants ;
+      models/uploadedfile.rb         >> belongs_to :user ; belongs_to :activity
+      models/activity.rb	     >> has_many :uploadedfiles ; belongs_to :institute
+                                        has_many :updates ; has_many :activity_participants
+      models/update.rb               >> belongs_to :user ; belongs_to :activity
+      models/activity_participant.rb >> belongs_to :user ; belongs_to :activity
+  --Get merge "data-model-relations"    
+  --Validates:
   
     
   
@@ -27,7 +41,8 @@ Date & Activities Done:
 
 
 To Do's:
-  --Tabel relations (has_many, belongs etc)
+  --Tabel relations (has_many, belongs etc) [Done]
+  --Validations for model
   --Create tests
   --Create seed
   --Add login

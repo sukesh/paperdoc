@@ -16,7 +16,4 @@ class User < ActiveRecord::Base
   
   # Since, any 'user' can have multiple 'updates'
   has_many :updates
-  
-  # Since, a 'user' can be part of multiple activity_participant.
-  has_many :activity_participants
 end

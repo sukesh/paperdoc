@@ -6,6 +6,6 @@ class Institute < ActiveRecord::Base
   # destroy all institute members if the institute is destroyed
   has_many :institute_members, :dependent => :destroy
   
-  # An 'institute' can have multiple 'activities'.
+  # 
   has_many :activities
 end
