@@ -1,0 +1,29 @@
+<h1>Listing activity_participants</h1>
+
+<table>
+  <tr>
+    <th>Activity</th>
+    <th>User</th>
+    <th>Type</th>
+    <th>Time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @activity_participants.each do |activity_participant| %>
+  <tr>
+    <td><%= activity_participant.activity_id %></td>
+    <td><%= activity_participant.user_id %></td>
+    <td><%= activity_participant.type %></td>
+    <td><%= activity_participant.time %></td>
+    <td><%= link_to 'Show', activity_participant %></td>
+    <td><%= link_to 'Edit', edit_activity_participant_path(activity_participant) %></td>
+    <td><%= link_to 'Destroy', activity_participant, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Activity participant', new_activity_participant_path %>

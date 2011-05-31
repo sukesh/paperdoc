@@ -1,0 +1,31 @@
+<h1>Listing updates</h1>
+
+<table>
+  <tr>
+    <th>Message</th>
+    <th>User</th>
+    <th>Activity</th>
+    <th>Type</th>
+    <th>Time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @updates.each do |update| %>
+  <tr>
+    <td><%= update.message %></td>
+    <td><%= update.user_id %></td>
+    <td><%= update.activity_id %></td>
+    <td><%= update.type %></td>
+    <td><%= update.time %></td>
+    <td><%= link_to 'Show', update %></td>
+    <td><%= link_to 'Edit', edit_update_path(update) %></td>
+    <td><%= link_to 'Destroy', update, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Update', new_update_path %>

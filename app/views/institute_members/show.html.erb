@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Institute:</b>
+  <%= @institute_member.institute_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @institute_member.user_id %>
+</p>
+
+<p>
+  <b>Official identification:</b>
+  <%= @institute_member.official_identification %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @institute_member.time %>
+</p>
+
+
+<%= link_to 'Edit', edit_institute_member_path(@institute_member) %> |
+<%= link_to 'Back', institute_members_path %>

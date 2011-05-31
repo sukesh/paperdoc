@@ -1,3 +1,45 @@
+Date & Activities Done:
+
+26.05.11 to 31-05-11 by Badarudheen:
+  --Created acenet_0001
+  --Git added (no github yet)
+  --Git commit "before any change"
+  --Update Gemfile with new gem requirements for test/development
+  --Created Scaffolds:
+      User name:string username:string password:string usertype:string photo_url:string
+      Institute name:string details:text user_id:integer emblem:string
+      Activity name:string type:string user_id:integer institute_id:integer details:text image_url:string
+      Uploadedfile name:string user_id:integer activity_id:integer time:string permission:string
+      Update message:text user_id:integer activity_id:integer type:string time:string
+      ActivityParticipant activity_id:integer user_id:integer type:string time:string
+      InstituteMember institute_id:integer user_id:integer official_identification:string time:string
+  --
+  
+    
+  
+
+
+
+
+
+
+
+
+
+To Do's:
+  --Create tests
+  --Create seed
+
+
+
+
+
+!Questions:
+1 -- Is there a datatype in Ruby & SQLite to identify Time/Date separately?
+
+
+
+------------------------END----------------
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create

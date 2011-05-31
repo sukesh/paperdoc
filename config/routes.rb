@@ -1,4 +1,18 @@
 Acenet0001::Application.routes.draw do
+  resources :institute_members
+
+  resources :activity_participants
+
+  resources :updates
+
+  resources :uploadedfiles
+
+  resources :activities
+
+  resources :institutes
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

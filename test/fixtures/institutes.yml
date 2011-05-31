@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  details: MyText
+  instituteadmin: 
+  emblem: MyString
+
+two:
+  name: MyString
+  details: MyText
+  instituteadmin: 
+  emblem: MyString

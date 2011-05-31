@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Message:</b>
+  <%= @update.message %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @update.user_id %>
+</p>
+
+<p>
+  <b>Activity:</b>
+  <%= @update.activity_id %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @update.type %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @update.time %>
+</p>
+
+
+<%= link_to 'Edit', edit_update_path(@update) %> |
+<%= link_to 'Back', updates_path %>

@@ -1,0 +1,29 @@
+<h1>Listing institute_members</h1>
+
+<table>
+  <tr>
+    <th>Institute</th>
+    <th>User</th>
+    <th>Official identification</th>
+    <th>Time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @institute_members.each do |institute_member| %>
+  <tr>
+    <td><%= institute_member.institute_id %></td>
+    <td><%= institute_member.user_id %></td>
+    <td><%= institute_member.official_identification %></td>
+    <td><%= institute_member.time %></td>
+    <td><%= link_to 'Show', institute_member %></td>
+    <td><%= link_to 'Edit', edit_institute_member_path(institute_member) %></td>
+    <td><%= link_to 'Destroy', institute_member, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Institute member', new_institute_member_path %>

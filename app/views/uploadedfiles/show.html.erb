@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @uploadedfile.name %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @uploadedfile.user_id %>
+</p>
+
+<p>
+  <b>Activity:</b>
+  <%= @uploadedfile.activity_id %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @uploadedfile.time %>
+</p>
+
+<p>
+  <b>Permission:</b>
+  <%= @uploadedfile.permission %>
+</p>
+
+
+<%= link_to 'Edit', edit_uploadedfile_path(@uploadedfile) %> |
+<%= link_to 'Back', uploadedfiles_path %>

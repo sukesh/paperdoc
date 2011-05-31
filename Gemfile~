@@ -29,16 +29,3 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
-
-#Added according to Michael Hartl Book testing/development requirements
-group :development do 
-  gem 'rspec-rails', '2.6.0'
-  gem 'annotate-models', '1.0.4'
-end
-
-group :test do
-  gem 'rspec', '2.6.0'
-  gem 'webrat', '0.7.3'
-  gem 'spork', '0.9.0.rc5'
-  gem 'factory_girl_rails', '1.0'
-end

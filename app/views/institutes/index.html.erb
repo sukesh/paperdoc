@@ -1,0 +1,29 @@
+<h1>Listing institutes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Details</th>
+    <th>Instituteadmin</th>
+    <th>Emblem</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @institutes.each do |institute| %>
+  <tr>
+    <td><%= institute.name %></td>
+    <td><%= institute.details %></td>
+    <td><%= institute.instituteadmin %></td>
+    <td><%= institute.emblem %></td>
+    <td><%= link_to 'Show', institute %></td>
+    <td><%= link_to 'Edit', edit_institute_path(institute) %></td>
+    <td><%= link_to 'Destroy', institute, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Institute', new_institute_path %>
