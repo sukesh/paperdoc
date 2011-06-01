@@ -51,6 +51,7 @@ To Do's:
   --Create tests
   --Create seed
   --Add login
+  --Add sign up
 
 !Questions:
 1 -- Is there a datatype in Ruby & SQLite to identify Time/Date separately?

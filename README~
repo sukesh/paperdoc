@@ -34,6 +34,9 @@ Date & Activities Done:
       remove password from users
       add email to institute
   --Git branch "user-validations"
+  --Github account addition and push:
+      git remote add origin git@github.com:futurenow/acenet_0001.git
+      git push -u origin master
   
     
 IMPORTANT/IMMEDIATE TO DO's:
