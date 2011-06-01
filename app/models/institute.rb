@@ -1,3 +1,18 @@
+# == Schema Information
+# Schema version: 20110531202925
+#
+# Table name: institutes
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  details    :text
+#  user_id    :integer
+#  emblem     :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#  email      :string(255)
+#
+
 class Institute < ActiveRecord::Base
   # since each institute is associated with 'user' who is the institute-admin
   belongs_to :user

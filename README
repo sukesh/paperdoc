@@ -26,37 +26,47 @@ Date & Activities Done:
                                         has_many :updates ; has_many :activity_participants
       models/update.rb               >> belongs_to :user ; belongs_to :activity
       models/activity_participant.rb >> belongs_to :user ; belongs_to :activity
-  --Get merge "data-model-relations"    
+  --Git merge "data-model-relations"    
   --Validates:
+      for models/user.rb
+  --Migrations:
+      add email, password_hash, password_salt to users
+      remove password from users
+      add email to institute
+  --Git branch "user-validations"
+  --Github account addition and push:
+      git remote add origin git@github.com:futurenow/acenet_0001.git
+      git push -u origin master
   
     
-  
-
-
-
-
-
-
-
-
+IMPORTANT/IMMEDIATE TO DO's:
+  ** Email fields for tables User and Institute [Done]
+  ** Salt field for table User                  [Done]
+  ** Validation tests for User                 
 
 To Do's:
   --Tabel relations (has_many, belongs etc) [Done]
   --Validations for model
+  --Validation tests
   --Create tests
   --Create seed
   --Add login
 
-
-
-
-
 !Questions:
 1 -- Is there a datatype in Ruby & SQLite to identify Time/Date separately?
+________________________________________________________________________________
 
 
 
-------------------------END----------------
+
+
+
+
+
+
+
+
+---------------------------------END--------------------------------------------
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
