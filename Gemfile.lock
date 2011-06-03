@@ -28,6 +28,7 @@ GEM
       activemodel (= 3.0.7)
       activesupport (= 3.0.7)
     activesupport (3.0.7)
+    annotate (2.4.0)
     annotate-models (1.0.4)
     arel (2.0.10)
     builder (2.1.2)
@@ -47,7 +48,7 @@ GEM
     mime-types (1.16)
     nokogiri (1.4.4)
     polyglot (0.3.1)
-    rack (1.2.2)
+    rack (1.2.3)
     rack-mount (0.6.14)
       rack (>= 1.0.0)
     rack-test (0.5.7)
@@ -70,7 +71,7 @@ GEM
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
       rspec-mocks (~> 2.6.0)
-    rspec-core (2.6.0)
+    rspec-core (2.6.3)
     rspec-expectations (2.6.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.6.0)
@@ -94,9 +95,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate
   annotate-models (= 1.0.4)
   factory_girl_rails (= 1.0)
   rails (= 3.0.7)
+  rake (~> 0.8.7)
   rspec (= 2.6.0)
   rspec-rails (= 2.6.0)
   spork (= 0.9.0.rc5)

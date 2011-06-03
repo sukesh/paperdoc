@@ -1,15 +1,18 @@
 class InstitutesController < ApplicationController
   # GET /institutes
   # GET /institutes.xml
+ auto_complete_for :institute,:name
+ institute_invalid=Institute.find_by_name("")
   def index
-    @institutes = Institute.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @institutes }
-    end
+    #@institutes = Institute.al
+    #respond_to do |format|
+      #format.html # index.html.erb
+      #format.xml  { render :xml => @institutes }
+    #end
+   @institutes=Institute.find(:all,:conditions=>['name LIKE ?',"#{params[:institute][:name]+'%'}"],:limit=>10)
+   
   end
-
+ 
   # GET /institutes/1
   # GET /institutes/1.xml
   def show

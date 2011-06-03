@@ -1,4 +1,10 @@
 Acenet0001::Application.routes.draw do
+  get "autocomplete_searches/Index"
+
+  root            :to =>"pages#home" 
+  match 'contact',:to=>"pages#contact"
+  match 'aboutus',:to=>"pages#aboutus"
+ 
   resources :institute_members
 
   resources :activity_participants
@@ -12,6 +18,11 @@ Acenet0001::Application.routes.draw do
   resources :institutes
 
   resources :users
+
+  match 'search',:to=> "institutes#show" 
+
+  resources :autocomplete_searches, :only => [:index], 
+                                    :as => 'autocomplete'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
