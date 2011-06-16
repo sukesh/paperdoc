@@ -1,6 +1,7 @@
 class UploadedfilesController < ApplicationController
   # GET /uploadedfiles
   # GET /uploadedfiles.xml
+@ttl="http://google.com"
   def index
     @uploadedfiles = Uploadedfile.all
 
@@ -13,7 +14,8 @@ class UploadedfilesController < ApplicationController
   # GET /uploadedfiles/1
   # GET /uploadedfiles/1.xml
   def show
-    @uploadedfile = Uploadedfile.find(params[:id])
+    
+    #@uploadedfile = Uploadedfile.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

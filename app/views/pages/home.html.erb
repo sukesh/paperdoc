@@ -1,12 +1,13 @@
-<br>
-<h1><b>&nbsp;&nbsp;
-AceNet
-</b></h1>
 <%= form_for(:institutes,:url=>institutes_path) do |f|%>
-<div class="enter">
-<%=f.label ("Enter Institute Name:")%>
-<%=text_field_with_auto_complete :institute,:name,{:size=>30},{:url=>institutes_path(:js),:method=>:get} %>
+<div class="enter">&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br><br><%=f.label ("Enter Institute Name:")%>
+<%=text_field_with_auto_complete :institute,:name,{:size=>40},{:url=>institutes_path(:js),:method=>:get} %>
 <%=f.submit "search" %>
+<br />
+<br />
+<br />
+<br />
+<br />
 </div>
 <% end %>
 

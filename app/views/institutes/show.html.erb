@@ -1,25 +1,26 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @institute.name %>
-</p>
+<section class = "round2">
+	<h1>Sign in</h1>
+<%= form_for(:session) do |f| %>
+			<div class="field">
+				<%= f.label :email %><br />
+				<%= f.text_field :email %>
+			</div>
+			
+			<div class="field">
+				<%= f.label :password %><br />
+				<%= f.password_field :password %>
+			</div>
 
-<p>
-  <b>Details:</b>
-  <%= @institute.details %>
-</p>
+			<div class="actions">
+				<%= f.submit "Sign in" %>
+			</div>
 
-<p>
-  <b>Instituteadmin:</b>
-  <%= @institute.instituteadmin %>
-</p>
+		<% end %>
 
-<p>
-  <b>Emblem:</b>
-  <%= @institute.emblem %>
-</p>
+	<p>New user? <%= link_to "Sign up now!", 'signup_path' %></p>
+		
+</section>
 
 
-<%= link_to 'Edit', edit_institute_path(@institute) %> |
-<%= link_to 'Back', institutes_path %>
+

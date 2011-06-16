@@ -1,29 +1,8 @@
 <p id="notice"><%= notice %></p>
+<iframe src="http://docs.google.com/viewer?url=":rails_root/public/system/names/:id/:style/:basename.:extension"&embedded=true" width="800" height="600" style="border: none;"></iframe>
+</iframe>
 
-<p>
-  <b>Name:</b>
-  <%= @uploadedfile.name %>
-</p>
 
-<p>
-  <b>User:</b>
-  <%= @uploadedfile.user_id %>
-</p>
-
-<p>
-  <b>Activity:</b>
-  <%= @uploadedfile.activity_id %>
-</p>
-
-<p>
-  <b>Time:</b>
-  <%= @uploadedfile.time %>
-</p>
-
-<p>
-  <b>Permission:</b>
-  <%= @uploadedfile.permission %>
-</p>
 
 
 <%= link_to 'Edit', edit_uploadedfile_path(@uploadedfile) %> |

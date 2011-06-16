@@ -4,7 +4,8 @@ Acenet0001::Application.routes.draw do
   root            :to =>"pages#home" 
   match 'contact',:to=>"pages#contact"
   match 'aboutus',:to=>"pages#aboutus"
- 
+  match '/signup', :to=>"users#new"
+#get "/public/uploadedfiles/system/names/5/original/captitude.doc"
   resources :institute_members
 
   resources :activity_participants
